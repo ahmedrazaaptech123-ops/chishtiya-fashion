@@ -1,0 +1,703 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chishtiya Fashion | Wholesale</title>
+
+   
+<style>
+/* ===== LUXURY BLACK & GREEN THEME ===== */
+
+:root {
+    --black: #080b09;
+    --black2: #101612;
+    --green: #064e3b;
+    --green-light: #0b6b4d;
+    --gold: #c9aa65;
+    --white: #f5f7f4;
+    --muted: #b5c0b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--black);
+    color: var(--white);
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #050706, #103c2d);
+    color: white;
+    padding: 28px 15px;
+    text-align: center;
+    border-bottom: 1px solid #c9aa6545;
+}
+
+.logo {
+    width: 105px;
+    height: 105px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #fff;
+    padding: 5px;
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 25px #c9aa6530;
+}
+
+header h1 {
+    color: var(--gold);
+    margin: 14px 0;
+    font-size: clamp(27px, 4vw, 42px);
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #d5dfd8;
+    letter-spacing: 2px;
+    margin: 7px 0;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #050806;
+    padding: 18px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #c9aa6540;
+    box-shadow: 0 5px 20px #0008;
+}
+
+nav a {
+    color: #f5f7f4;
+    text-decoration: none;
+    margin: 10px 14px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 470px;
+    background:
+        radial-gradient(ellipse at top right, #0b6b4d45, transparent 55%),
+        linear-gradient(120deg, #050706, #103c2d, #07100b);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 1px solid #c9aa6530;
+}
+
+.hero h2 {
+    font-size: clamp(34px, 5vw, 55px);
+    color: var(--gold);
+    margin-bottom: 22px;
+    text-shadow: 0 4px 20px #000;
+}
+
+.hero p {
+    max-width: 720px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #dbe4de;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #d9bd7c, #b28d45);
+    color: #101510;
+    padding: 14px 24px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #e7d39e;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: var(--green-light);
+    border-color: var(--green-light);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px #0b6b4d55;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 75px 7%;
+    text-align: center;
+    scroll-margin-top: 75px;
+}
+
+section h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    color: var(--gold);
+    margin-bottom: 24px;
+}
+
+.intro {
+    max-width: 900px;
+    margin: auto;
+    line-height: 2;
+    font-size: 17px;
+    color: #cbd5ce;
+}
+
+/* FEATURES */
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.feature {
+    background: linear-gradient(145deg, #151d17, #0b100d);
+    padding: 30px 24px;
+    border-radius: 10px;
+    border: 1px solid #c9aa6540;
+    box-shadow: 0 12px 30px #0005;
+    flex: 1 1 220px;
+    transition: .3s;
+}
+
+.feature:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+}
+
+.feature h3 {
+    color: #d9bd7c;
+    margin-bottom: 13px;
+    font-size: 21px;
+}
+
+.feature p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* PRODUCT COLLECTION */
+
+.products {
+    background: linear-gradient(180deg, #101712, #080b09);
+    border-top: 1px solid #c9aa6525;
+    border-bottom: 1px solid #c9aa6525;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.product {
+    background: linear-gradient(145deg, #172019, #0b100c);
+    width: 300px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #c9aa6540;
+    box-shadow: 0 15px 35px #0006;
+    transition: .3s;
+}
+
+.product:hover {
+    transform: translateY(-7px);
+    border-color: var(--gold);
+    box-shadow: 0 18px 40px #0009;
+}
+
+.product img {
+    width: 100%;
+    height: 270px;
+    object-fit: contain;
+    background: #f4f0e7;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.product h3 {
+    color: var(--gold);
+    margin: 18px 0 10px;
+    font-size: 21px;
+}
+
+.product p {
+    color: #c3cec6;
+    line-height: 1.8;
+}
+
+/* WHOLESALE SECTION */
+
+.wholesale {
+    background:
+        radial-gradient(ellipse at center, #0c563d55, transparent 70%),
+        #080b09;
+    color: white;
+    border-top: 1px solid #c9aa6540;
+    border-bottom: 1px solid #c9aa6540;
+}
+
+.wholesale h2 {
+    color: var(--gold);
+}
+
+.wholesale p {
+    line-height: 2.2;
+    font-size: 17px;
+    color: #d7e0d9;
+    margin-bottom: 15px;
+}
+
+/* CONTACT CARDS */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.contact-card {
+    background: linear-gradient(145deg, #172019, #0b100c);
+    padding: 30px 22px;
+    width: 310px;
+    border-radius: 12px;
+    border: 1px solid #c9aa6550;
+    box-shadow: 0 12px 35px #0006;
+    transition: .3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+.contact-card h3 {
+    color: var(--gold);
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-card p {
+    margin: 12px 0;
+    color: #d0d9d2;
+    overflow-wrap: anywhere;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp {
+    background: #128348;
+    color: white;
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 12px;
+    font-weight: bold;
+    border: 1px solid #36b875;
+    transition: .3s;
+}
+
+.whatsapp:hover {
+    background: #20b85a;
+    box-shadow: 0 5px 20px #20b85a35;
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+
+footer {
+    background: #030504;
+    color: #cbd5ce;
+    padding: 35px 15px;
+    text-align: center;
+    line-height: 2.2;
+    border-top: 2px solid #c9aa6570;
+}
+
+footer strong {
+    color: var(--gold);
+}
+
+footer h2 {
+    color: var(--gold);
+}
+
+/* TEXT SELECTION */
+
+::selection {
+    background: #0b6b4d;
+    color: white;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+        letter-spacing: 2px;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+    <!-- HEADER AND LOGO -->
+    <header id="home">
+
+        <img src="logo.png"
+             alt="Chishtiya Fashion Logo"
+             class="logo">
+
+        <h1>CHISHTIYA FASHION</h1>
+
+        <p>PREMIUM WHOLESALE COLLECTION</p>
+
+        <p>Quality • Style • Wholesale Rates</p>
+
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#collection">Collection</a>
+        <a href="#wholesale">Wholesale</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <div class="hero">
+
+        <div>
+            <h2>Welcome to Chishtiya Fashion</h2>
+
+            <p>
+                Your Trusted Wholesale Clothing Brand!
+                Stylish suits, attractive prints and a wide
+                variety of designs at wholesale rates.
+                Delivery available all over Pakistan.
+            </p>
+
+            <a href="#collection" class="btn">
+                Explore Our Collection
+            </a>
+
+            <br>
+
+            <a href="https://wa.me/923122348927"
+               target="_blank"
+               class="whatsapp">
+                Contact on WhatsApp
+            </a>
+        </div>
+
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+
+        <h2>About Chishtiya Fashion</h2>
+
+        <p class="intro">
+            Chishtiya Fashion mein aap ko bachon ke suits,
+            stylish clothing aur bohot se khoobsurat designs
+            wholesale rates par milte hain.
+
+            Hum poora packet sale karte hain.
+            One-piece sale available nahi hai.
+
+            Pakistan ke tamam shehron mein delivery available hai.
+            Mazeed designs aur items ke liye hum se contact karein.
+            InshaAllah aap ko aur bhi behtareen designs dikhaye jayenge.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>Wholesale Rates</h3>
+                <p>Business customers ke liye wholesale collection.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Full Packet Sale</h3>
+                <p>Sirf complete packet sale hota hai, single piece nahi.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Pakistan Delivery</h3>
+                <p>Pakistan bhar mein delivery ke liye contact karein.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCT COLLECTION -->
+    <section class="products" id="collection">
+
+        <h2>Our Premium Collection</h2>
+
+        <p>
+            Hamare available designs dekhne ke liye
+            WhatsApp par contact karein.
+        </p>
+
+        <div class="product-container">
+
+            <div class="product">
+
+                <img src="avengers-set.jpg"
+                     alt="Kids Suits">
+
+                <h3>Kids Suits</h3>
+
+                <p>
+                    Different colors, prints aur stylish designs.
+                </p>
+
+                <a href="https://wa.me/923122348927?text=Please%20share%20kids%20suits%20designs"
+                   target="_blank"
+                   class="whatsapp">
+                    View Designs
+                </a>
+
+            </div>
+
+            <div class="product">
+
+                <img src="bear-hoodie.png"
+                     alt="Hoodies Collection">
+
+                <h3>Hoodies & Winter Wear</h3>
+
+                <p>
+                    Seasonal clothing aur attractive prints.
+                </p>
+
+                <a href="https://wa.me/923122348927?text=Please%20share%20hoodies%20designs"
+                   target="_blank"
+                   class="whatsapp">
+                    View Designs
+                </a>
+
+            </div>
+
+            <div class="product">
+
+                <img src="spark-set.png"
+                     alt="New Arrivals">
+
+                <h3>New Arrivals</h3>
+
+                <p>
+                    Mazeed items aur latest designs ke liye rabta karein.
+                </p>
+
+                <a href="https://wa.me/923122348927?text=Please%20share%20your%20latest%20catalogue"
+                   target="_blank"
+                   class="whatsapp">
+                    Get Catalogue
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHOLESALE INFORMATION -->
+    <section class="wholesale" id="wholesale">
+
+        <h2>Wholesale Orders</h2>
+
+        <p>
+            ✔ Wholesale Rates Available<br>
+            ✔ Full Packet Sale Only<br>
+            ✔ One Piece Not Available<br>
+            ✔ Delivery Available All Over Pakistan<br>
+            ✔ More Designs and Items Available
+        </p>
+
+        <p>
+            Order details, packet quantity aur current rates
+            maloom karne ke liye hamari team se contact karein.
+        </p>
+
+        <a href="https://wa.me/923122348927"
+           target="_blank"
+           class="btn">
+            WhatsApp for Wholesale
+        </a>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+
+        <h2>Contact Our Team</h2>
+
+        <p>
+            Wholesale orders aur latest designs ke liye
+            hamare owners aur manager se rabta karein.
+        </p>
+
+        <div class="contact-container">
+
+            <!-- OWNER 1 -->
+            <div class="contact-card">
+
+                <h3>Owner</h3>
+
+                <h3>Aneel Siddique</h3>
+
+                <p>Contact: 03122348927</p>
+
+                <a href="https://wa.me/923122348927"
+                   target="_blank"
+                   class="whatsapp">
+                    WhatsApp Aneel
+                </a>
+
+            </div>
+
+            <!-- OWNER 2 -->
+            <div class="contact-card">
+
+                <h3>Owner</h3>
+
+                <h3>Adeel Siddique</h3>
+
+                <p>Contact: 03122343218</p>
+
+                <a href="https://wa.me/923122343218"
+                   target="_blank"
+                   class="whatsapp">
+                    WhatsApp Adeel
+                </a>
+
+            </div>
+
+            <!-- JUNIOR MANAGER -->
+            <div class="contact-card">
+
+                <h3>Junior Manager</h3>
+
+                <h3>Hafiz M. Ahmed Raza Aneel Siddique</h3>
+
+                <p>Contact: 03136159909</p>
+
+                <a href="https://wa.me/923136159909"
+                   target="_blank"
+                   class="whatsapp">
+                    WhatsApp Junior Manager
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2 style="color:#e2bd72;">
+            CHISHTIYA FASHION
+        </h2>
+
+        <p>Premium Wholesale Clothing Collection</p>
+
+        <p>Full Packet Sale Only | Delivery Across Pakistan</p>
+
+        <p>
+            Junior Manager:
+            <strong>Hafiz M. Ahmed Raza Aneel Siddique</strong>
+        </p>
+
+        <p>
+            © <span id="year"></span> Chishtiya Fashion.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
